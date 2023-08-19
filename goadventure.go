@@ -7,7 +7,6 @@ import (
 	"github.com/fatih/color"
 
 	"gitlab.com/nikkehtine/go-text-adventure/logic"
-	"gitlab.com/nikkehtine/go-text-adventure/worldgen"
 )
 
 func main() {
