@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"gitlab.com/nikkehtine/go-text-adventure/logic"
+)
 
 func main() {
-	fmt.Println("Hello")
+	fmt.Println(logic.Test())
 }
