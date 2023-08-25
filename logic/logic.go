@@ -18,5 +18,9 @@ func Test() string {
 }
 
 func GenerateLevel() {
-	worldgen.GenerateLevel()
+	level, err := worldgen.GenerateLevel()
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(level)
 }
