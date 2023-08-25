@@ -16,3 +16,7 @@ func Test() string {
 
 	return fmt.Sprintf("Server status: working\nWorldgen status: %s", worldgenStatus)
 }
+
+func GenerateLevel() {
+	worldgen.GenerateLevel()
+}

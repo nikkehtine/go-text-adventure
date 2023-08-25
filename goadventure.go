@@ -24,7 +24,7 @@ func handleInput() {
 	fmt.Scanln(&input)
 	switch input {
 	case "start":
-		fmt.Println("Hello world!")
+		logic.GenerateLevel()
 	case "quit":
 		print("Goodbye soldier. We will miss you.")
 		os.Exit(0)
