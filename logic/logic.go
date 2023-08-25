@@ -7,12 +7,12 @@ import (
 )
 
 func Test() string {
-	var wgstat string
+	var worldgenStatus string
 	if worldgen.Test() {
-		wgstat = "working"
+		worldgenStatus = "working"
 	} else {
-		wgstat = "NOT working!"
+		worldgenStatus = "NOT working!"
 	}
 
-	return fmt.Sprintf("Server status: working\nWorldgen status: %s", wgstat)
+	return fmt.Sprintf("Server status: working\nWorldgen status: %s", worldgenStatus)
 }
