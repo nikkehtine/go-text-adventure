@@ -11,7 +11,6 @@ import (
 
 func main() {
 	fmt.Println(logic.Test())
-	fmt.Println(worldgen.Test())
 
 	showHelp()
 	for {
@@ -20,7 +19,7 @@ func main() {
 }
 
 func handleInput() {
-	fmt.Print(">>>")
+	fmt.Printf("\n>>>")
 	var input string
 	fmt.Scanln(&input)
 	switch input {
