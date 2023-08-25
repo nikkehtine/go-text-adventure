@@ -8,8 +8,8 @@ func Test() bool {
 	return true
 }
 
-func GenerateLevel() {
-	// Generate at least 5 and at most 16 rooms in a level
+func GenerateLevel(args ...int) (string, error) {
+	// Generate at least 5 and at most 16 rooms in a level by default
 	// var rooms int = 5 + rand.Intn(11)
 	// layout := generateLayout(rooms)
 }
