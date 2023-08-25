@@ -3,16 +3,24 @@ package logic
 import (
 	"fmt"
 
-	"gitlab.com/nikkehtine/go-text-adventure/worldgen"
+	"gitlab.com/nikkehtine/go-text-adventure/logic/worldgen"
 )
 
 func Test() string {
-	var wgstat string
+	var worldgenStatus string
 	if worldgen.Test() {
-		wgstat = "working"
+		worldgenStatus = "working"
 	} else {
-		wgstat = "NOT working!"
+		worldgenStatus = "NOT working!"
 	}
 
-	return fmt.Sprintf("Server status: working\nWorldgen status: %s", wgstat)
+	return fmt.Sprintf("Server status: working\nWorldgen status: %s", worldgenStatus)
+}
+
+func GenerateLevel() {
+	level, err := worldgen.GenerateLevel()
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(level)
 }
