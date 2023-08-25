@@ -3,7 +3,7 @@ package logic
 import (
 	"fmt"
 
-	"gitlab.com/nikkehtine/go-text-adventure/worldgen"
+	"gitlab.com/nikkehtine/go-text-adventure/logic/worldgen"
 )
 
 func Test() string {
